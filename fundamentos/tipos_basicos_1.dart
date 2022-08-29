@@ -28,7 +28,7 @@ main() {
   String s2 = " dia";
 
   print(s1 + s2.toUpperCase() + "!");
-  //posso usar a atribuição '. ' após minha variável para atribuir algo que eu queira a mais nela, como nesse caso '.toUpperCase()' que faz com que todas as letras fiquem em caixa alta
+  //posso usar a anotação ponto '. ' após minha variável para atribuir algo que eu queira a mais nela, como nesse caso '.toUpperCase()' que faz com que todas as letras fiquem em caixa alta
 
   bool estaChovendo = true;
   bool muitoFrio = false;
@@ -42,8 +42,8 @@ main() {
   print(x);
 
   x = 456;
-  print(
-      x); // Do mesmo modo posso atribuir um número para o x por ele ser do tipo dynamic
+  print(x); 
+  // Do mesmo modo posso atribuir um número para o x por ele ser do tipo dynamic
 
   x = false; // Assim como posso atribuir ela como um booleano
   print(x);
