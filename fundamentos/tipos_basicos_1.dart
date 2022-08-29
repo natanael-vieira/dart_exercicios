@@ -12,7 +12,7 @@
 main() {
   int n1 = 3;
   double n2 = (5.67).abs();
-  // '.abs()' se chama anotação ponto, serve para eu usar o número absoluto, eu ignoro o sinal negativo e utilizo apenas o número absoluto. Posso chamar a variável desta forma também, seleciono a variável 'n2.abs();' chamo ela, mas apenas o valor absoluto
+  // '.abs()' se chama notação ponto absoluto, serve para eu usar o número absoluto, eu ignoro o sinal negativo e utilizo apenas o número absoluto. Posso chamar a variável desta forma também, seleciono a variável 'n2.abs();' chamo ela, mas apenas o valor absoluto
   print(n1 + n2);
   // Quando realizar esta operação (print) ela será armazenada como um 'double', porque ela é capaz de armazenar mais informações do que um 'int'
   double n3 = double.parse("12.765");
@@ -28,7 +28,7 @@ main() {
   String s2 = " dia";
 
   print(s1 + s2.toUpperCase() + "!");
-  //posso usar a anotação ponto '. ' após minha variável para atribuir algo que eu queira a mais nela, como nesse caso '.toUpperCase()' que faz com que todas as letras fiquem em caixa alta
+  //posso usar a notação ponto '. ' após minha variável para atribuir algo que eu queira a mais nela, como nesse caso '.toUpperCase()' que faz com que todas as letras fiquem em caixa alta
 
   bool estaChovendo = true;
   bool muitoFrio = false;
