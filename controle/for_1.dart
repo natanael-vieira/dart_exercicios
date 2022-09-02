@@ -23,4 +23,9 @@ main() {
   print('[FORA] b = $b');
   // Este print '[FORA]' mostra onde o FOR chegou e se tornou false dentro do laço FOR, por isso exibe o número diferente do que foi exibido dentro do escopo
   print('Fim!');
+
+  var notas = [9.8, 3.8, 8.7, 9.6, 1.9];
+  for (var i = 0; i < notas.length; i++) {
+    print('Nota ${i + 1} = ${notas[i]}');
+  }
 }
