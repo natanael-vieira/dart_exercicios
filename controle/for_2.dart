@@ -1,22 +1,26 @@
+// for in
+
 main() {
-  var notas = {9.8, 3.8, 8.7, 9.6, 1.9};
-  // Aqui pode ser usado tanto parênteses quanto chaves que não vai alterar em nada o código, continuará funcionando normalmente
+  var notas = [8.9, 9.3, 7.8, 6.9, 9.1];
+
+  for (var i = 0; i < notas.length; i++) {
+    print('Nota ${i + 1} = ${notas[i]}');
+  } //Este é o for tradicional, no caso seria esta forma de mostrar os valores das notas individualmente
+
   for (var nota in notas) {
-    print('O valor da nota é $nota');
-  }
+    print('A nota vale $nota.');
+  } //for in é simplificado se comparada ao for tradicional, fica mais simples de enxergar e mais exuta de se ver.
 
   var coordenadas = [
     [1, 3],
     [9, 1],
-    [19, 13],
+    [19, 23],
     [2, 14],
   ];
 
   for (var coordenada in coordenadas) {
     for (var ponto in coordenada) {
-      print('Valor do ponto é $ponto');
+      print('Valor do ponto é $ponto.');
     }
   }
-
-  // Para que eu possa fazer o debug do código eu crio um breackpoint, que nada mais é do que clicar e ativar a bolinha vermelha antes do número da linha, que depois de selecionada ela fica visível sempre, antes ela só ficava opaca quando passamos o mouse por cima, e a partir disso eu posso usar o F5 para controlar a execução das linhas seguintes, com a ajuda do Watch(Inspeção), onde posso especificar ainda mais o que vai ser executado a seguir.
 }

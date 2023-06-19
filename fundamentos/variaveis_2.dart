@@ -1,13 +1,18 @@
 main() {
-  var n1 = 3;
+  var n1 = 2;
   var n2 = 4.56;
-  var texto = "O valor da soma é: ";
+  var texto = 'O valor da soma é: ';
 
   print(texto + (n1 + n2).toString());
-  // .toString converte os número em uma string o que permite que sejam concatenados
+
+  var t1 = 'Olá ';
+  var t2 = 'Dart!';
+
+  print(t1 + t2);
 
   print(n1.runtimeType);
-  // .runtimeType serve para mostrar que tipo de variável está sendo utilizada
   print(n2.runtimeType);
   print(texto.runtimeType);
+  print(t1.runtimeType);
+  print(t1.runtimeType);
 }

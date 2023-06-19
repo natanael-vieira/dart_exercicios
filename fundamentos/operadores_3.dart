@@ -1,21 +1,29 @@
 main() {
+  //Operadores Unários (postfix ou prefix)
   int a = 3;
   int b = 4;
 
-// Operadores Unários, ou seja, estão antes (Prefix) ou depois (Postfix) do operando/variável
-  a++; // Postfix, neste caso adicionando mais '1' a variável 'a'
-  --a; // Prefix, neste caso retirando '1' da variável 'a'
+  a++; // postfix
+  print(a);
 
+  --a; // prefix
   print(a);
 
   print(a++ == --b);
-  // Quando colocamos o operador depois do operando como no exemplo acima, 'a++', ele não é prioritários em relação ao operador que foi colocado antes do operando como no exemplo acima, '--b'. Nestes casos os operadores que vem antes dos operandos, Prefix, terão prioridade no processamento antes da comparação
-  print(++a == b--);
+  /*A diferença entre colocar o operador prefix ou postfix 
+  é com relação a sua urgência em ser resolvido aquela operação, 
+  no caso dos prefix eles tem precedência na operação, ou seja, vai ser resolvido
+  primeiramente o operador -- e depois vai ser realizado a comparação, já nos casos 
+  de postfix a precedência é deixada de lado e quem vai ter a prioridade no caso será 
+  a igualdade para depois realizar o incremento ++*/
+  print(a == b);
+  print(b-- == a++);
+  print(b != a);
 
-  // Operador Lógico Unário (NOT)
   print(!true);
   print(!false);
 
   bool x = false;
+
   print(!x);
 }

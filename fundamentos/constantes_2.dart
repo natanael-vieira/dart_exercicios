@@ -1,8 +1,13 @@
 main() {
-  const lista = ['Thais', 'Natanael', 'Abigail', 'Timóteo', 'Rute'];
-  // se por acaso eu colocar no lugar do 'final' o 'const' da mesma forma eu não consigo alterar nada na lista, nem atribuir uma nova lista ao identificador ou adicionar/remover um dado dentro da lista
-  // lista.add('Joaquim'); // Não se pode colocar mais nenhum nome na lista porque ela é uma constante agora, desse modo não pode ser alterada, nem retirar ou adicionar nomes, neste exemplo.
-  // lista = ['banana', 'maçã']; // Não tem como atribuir uma nova lista ao identificado 'lista' porque ela agora é um final, ou seja, ela agora é uma constante e não tem como mais adicionar esse novo atributo, caso não houvesse o const na lista após a atribuição eu ainda conseguiria adicionar/remover nomes dentro da lista
+  final lista = const ['Natanael', 'Thais', 'Abigail'];
+  /*Em uma variável final eu consigo ainda incluir
+  novos itens dentro da lista, porém quando incluo o const 
+  após o sinal de igualdade, eu torno aquela lista uma constante invariável, 
+  não me permitindo incluir ou excluir determinadas informações*/
+  // lista = ['Banana', 'Uva']; // Não consigo trocar as informações atribuindo 
+  //um novo valor para a lista como fazemos em uma var comum, após alterar para 
+  //final não podemos mais realizar este procedimento.
+  lista.add('Rute');
 
   print(lista);
 }

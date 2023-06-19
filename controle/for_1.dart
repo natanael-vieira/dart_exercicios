@@ -1,31 +1,25 @@
-// -FOR: Dentro da estrutura do FOR temos três coias, a variável, a expressão que vai retornar se é verdadeiro ou falso e por último a expressão que vai evoluir como a variável vai se tornar falsa
 main() {
-  for (int a = 1; a <= 10; a += 2) {
+  for (int a = 0; a < 10; a++) {
     print('a = $a');
   }
-
   print('Fim!');
 
-  for (int a = 100; a >= 0; a -= 4) {
-    print('a = $a');
+  for (int i = 100; i >= 0; i -= 10) {
+    print('i = $i');
   }
-
-  print('Fim!');
-
-  // Não tem problema nenhum eu ter utilizado a mesma variável dentro do escopo de cada uma das expressões no 'FOR', porque não vai dar problema, pois a variável dentro do escopo da função só será acessada dentro da função, então posso usar tranquilamente, porém é bom que seja utilizada outra variável para boas práticas.
-  // Posso usar também a variável fora do escopo e chamar pelo for
+  print('Acabou também!');
 
   int b = 0;
   for (; b <= 10; b++) {
     print('b = $b');
   }
+  print('[FORA do for] b = $b');
+  /*Aqui foi onde o laço for foi encerrado, pois na expressão ele confirma se 
+  o número testado é menor ou igual a 10, como agora é falsa a expressão ele 
+  encerrou o laço e por isso o b no externo ao for vale 11*/
 
-  print('[FORA] b = $b');
-  // Este print '[FORA]' mostra onde o FOR chegou e se tornou false dentro do laço FOR, por isso exibe o número diferente do que foi exibido dentro do escopo
-  print('Fim!');
-
-  var notas = [9.8, 3.8, 8.7, 9.6, 1.9];
-  for (var i = 0; i < notas.length; i++) {
-    print('Nota ${i + 1} = ${notas[i]}');
+  var notas = [8.9, 9.3, 7.8, 6.9, 9.1];
+  for (var j = 0; j < notas.length; j++) {
+    print('Nota ${j + 1} = ${notas[j]}.');
   }
 }

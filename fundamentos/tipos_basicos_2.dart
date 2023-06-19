@@ -1,42 +1,43 @@
 /*
-  - List é uma lista 
-  - Map é uma lista/conjunto composta
-  - Set é um conjunto simples
- */
+ - List
+ - Set
+ - Map
+*/
 
 main() {
-  List aprovados = ['Ana', 'Carlos', 'Daniel', 'Rafael'];
+  var aprovados = ['Natanael', 'Thais', 'Abigail', 'Rute'];
+  aprovados.add('Abigail');
+  print(aprovados is List);
   print(aprovados);
   print(aprovados.elementAt(2));
-  //Todos os elmentos da lista em Dart são indexadas, ou seja sempre estão em índices, posso selecionar qualquer um por meio do print ou outro comando, como por exemplo o print acima, e todos os índices começam a partir do '0' (zero)
   print(aprovados[0]);
   print(aprovados.length);
+  print(aprovados[3]);
+  print(aprovados[1]);
 
-  var fone = {
-    'João': '+55 (48) 98765-4321',
-    'Maria': '+55 (62) 98765-4321',
-    'Pedro': '+55 (11) 98765-4321',
-    'João': '+55 (31) 98765-4321',
+  var telefones = {
+    'Natanael': '+55 (48) 99128-6882',
+    'Thais': '+55 (48) 99143-9901',
+    'Abigail': '+55 (48) 99692-2098',
+    'Rute': '+55 (48) 99692-2098'
   };
 
-  print(fone is Map);
-  print(fone);
-  print(fone['João']);
-  print(fone.length);
-  // Dentro do Map eu não posso repetir uma chave, porque o Map não aceita repetições, se por acaso eu repetir uma chave, por exemplo eu colocar outro valor João e pedir para imprimir, ele vai repetir a última entrada de chave 'João' e imprimir a chave e valor correspondente ao último inserido. Obs.: O VSCode sempre vai avisar que tem uma chave duplicada.
-  print(fone.values); // Serve para que eu imprima apenas o valor, sem a chave
-  print(fone.keys); // Serve para que eu imprima apenas a chave, sem o valor
-  print(fone.entries); // Serve para que eu imprima todas as informações do Map
+  print(telefones is Map);
+  print(telefones);
+  print(telefones['Rute']);
+  print(telefones.length);
+  print(telefones.values);
+  print(telefones.keys);
+  print(telefones.entries);
 
-  var times = {'Vasco', 'Flamengo', 'Chapecoense', 'Corinthians'};
-  // Assim como o Ma, o Set também não aceita repetições
+  var times = {'Corinthians', 'São Paulo', 'Flamengo', 'Atlético-MG'};
+  //print(times[0]); Não é possível realizar o print desta forma porque o Set [conjunto] não é indexado, desta forma não podemos elencar índices.
   print(times is Set);
-  times.add('Palmeiras');
-  times.add('Palmeiras');
-  times.add('Palmeiras');
+  print(times);
+  times.add('Chapecoense');
   print(times.length);
-  print(times.contains('Chapecoense'));
+  print(times.contains('Vasco'));
   print(times.first);
   print(times.last);
-  print(times);
+  //Set não aceita repetições, você pode até usar add, mas ele não vai repetir.
 }
