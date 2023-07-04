@@ -9,6 +9,14 @@ main() {
   };
 
   print(soma02(15, 318));
+
+  //Além de tudo ainda posso utilizar da inferência para criar a função
+
+  var soma03 = (k, w) {
+    return k * w;
+  };
+
+  print(soma03(7, 5));
 }
 
 int somaFn(int a, int b) {
