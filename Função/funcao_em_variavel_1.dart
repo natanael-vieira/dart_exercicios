@@ -12,7 +12,7 @@ main() {
 
   //Além de tudo ainda posso utilizar da inferência para criar a função
 
-  var soma03 = (k, w) {
+  var soma03 = (int k, int w) {
     return k * w;
   };
 
