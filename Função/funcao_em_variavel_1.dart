@@ -1,4 +1,6 @@
 main() {
+  // Para criar uma função em variável é seguido um padrão:
+  //       TIPO           NOME  = VALOR
   int Function(int, int) soma01 = somaFn;
   print(soma01(20, 313));
 
