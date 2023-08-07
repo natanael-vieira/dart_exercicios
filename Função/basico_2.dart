@@ -4,8 +4,10 @@ main() {
   int a = Random().nextInt(20);
   int b = Random().nextInt(20);
   print('Os números sorteados foram $a e $b');
-
+  
   int resultado = somar(a, b);
+  print('A soma dos números sorteados é : $resultado');
+
   resultado *= 2;
 
   print('O dobro do resultado é $resultado');

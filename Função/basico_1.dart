@@ -17,7 +17,7 @@ void somaComPrint(int a, int b) {
 void somaDoisNumerosQuaisquer() {
   int n1 = Random().nextInt(11);
   int n2 = Random().nextInt(11);
-  print('O primeiro número é $n1.');
-  print('O segundo número é $n2.');
+  print('O primeiro número sorteado foi $n1.');
+  print('O segundo número sorteado foi $n2.');
   print(n1 + n2);
 }
