@@ -3,7 +3,7 @@ Object segundoElementoV1(List lista) {
 }
 
 E? segundoElementoV2<E>(List<E> lista) {
-  return lista.length >= 2 ? lista[1] : null;
+  return lista.length >= 4 ? lista[3] : null;
 }
 
 main() {
