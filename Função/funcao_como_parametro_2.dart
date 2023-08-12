@@ -12,5 +12,6 @@ main() {
     print(valor);
     return valor;
   };
-  executarPor(10, meuPrint, 'Testando as paradas!');
+  int tamanho = executarPor(10, meuPrint, 'Testando as paradas!');
+  print('O tamanho da string é de $tamanho caracteres!');
 }
