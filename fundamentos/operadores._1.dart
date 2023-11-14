@@ -19,7 +19,7 @@ main() {
   bool ehCaro = false;
 
   print(ehFragil && ehCaro); // Operação 'AND - E'
-  print(ehFragil || ehCaro); // Operação 'OR - OU' PS DeadCode
+  //print(ehFragil || ehCaro); // Operação 'OR - OU' PS DeadCode
   print(ehFragil ^ ehCaro); // Operação 'XOR - OU EXCLUSIVO'
   print(!ehFragil); // Operação 'NOT - NEGAÇÃO' (Unário/Prefix)
   print(!!ehCaro); // Operação 'DUPLA NEGAÇÃO'
