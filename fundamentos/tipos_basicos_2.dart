@@ -14,7 +14,7 @@ main() {
     'Amelie'
   ];
 
-  print(aprovados is List);
+  //print(aprovados is List);
   print(aprovados);
   print(aprovados.elementAt(4));
   print(aprovados[0]);
@@ -27,7 +27,7 @@ main() {
     'Thais TIM': '+55 48 99692-2098',
   };
 
-  print(telefones is Map);
+  //print(telefones is Map);
   print(telefones);
   print(telefones['Natanael']);
   print(telefones.length);
@@ -38,7 +38,7 @@ main() {
   //Set - Não aceita repetição
   var times = {'Vasco', 'Flamengo', 'Fortaleza', 'São Paulo'};
 
-  print(times is Set);
+  //print(times is Set);
   times.add('Palmeiras');
   times.add('Palmeiras');
   times.add('Palmeiras');
