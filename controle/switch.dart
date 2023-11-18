@@ -8,6 +8,7 @@ main() {
     case 10:
     case 9:
       print('Quadro de Honra!');
+      break;
     case 8:
     case 7:
       print('Aprovado!');
@@ -15,13 +16,16 @@ main() {
     case 6:
     case 5:
       print('Recuperação!');
+      break;
     case 4:
     case 3:
       print('Recuperação + Trabalho');
+      break;
     case 2:
     case 1:
     case 0:
       print('Reprovado!');
+      break;
     default:
       print('NOTA INVÁLIDA!');
   }
