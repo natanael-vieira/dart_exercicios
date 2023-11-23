@@ -3,7 +3,7 @@ class Data {
   int? mes;
   int? ano;
 
-  String obterFormatada() {
+  String obterFormatada() {//método
     return '$dia/$mes/$ano';
   }
 }
