@@ -1,12 +1,21 @@
 class Carro {
   final int velocidadeMaxima;
-  int _velocidadeAtual = 0;
+  int _velocidadeAtual = 0; // underline antes serve para ocultar os valores
+  //para não serem alterados mais
 
   Carro([this.velocidadeMaxima = 200]);
 
   int get velocidadeAtual {
     return this._velocidadeAtual;
-  } // Método get, serve para não deixar alterar a variável 
+  } // Método get, serve para não deixar alterar a variável
+
+  void set velocidadeAtual(int novaVelocidade) {
+    bool deltaValido = (_velocidadeAtual - novaVelocidade).abs() <= 5; // Método set, consigo alterar a variável mesmo depois de ter criado o método get, 
+    // ou seja, ocultado o valor anterior, mas limitando a uma margem de erro aceitável, neste caso 5 km/h
+    if (deltaValido && novaVelocidade >= 0) {
+      this._velocidadeAtual = novaVelocidade;
+    }
+  }
 
   int acelerar() {
     if (_velocidadeAtual + 5 >= velocidadeMaxima) {
