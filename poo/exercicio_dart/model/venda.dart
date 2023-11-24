@@ -8,6 +8,6 @@ class Venda {
   Venda({this.cliente, this.itens = const []});
 
   double? get valorTotal {
-    return itens.map((item) => item.preco * item.quantidade).reduce((t, a) => t + a);
+    return itens?.map((item) => item.preco * item.quantidade!).reduce((t, a) => t + a);
   }
 }
