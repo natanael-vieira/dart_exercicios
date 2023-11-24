@@ -1,7 +1,7 @@
 class Carro {
   final int velocidadeMaxima;
   int _velocidadeAtual = 0; // underline antes serve para ocultar os valores
-  //para não serem alterados mais
+  //para não serem alterados mais, apenas no próprio arquivo.
 
   Carro([this.velocidadeMaxima = 200]);
 
