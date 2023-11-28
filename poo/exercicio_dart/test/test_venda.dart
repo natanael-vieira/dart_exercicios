@@ -27,4 +27,6 @@ main() {
   print('O valor total da venda é: ${venda.valorTotal}');
 
   print('O nome do primeiro produto é: ${venda.itens?[0].produto?.nome}');
+
+  print('O CPF do primeiro produto é: ${venda.cliente?.cpf}');
 }
